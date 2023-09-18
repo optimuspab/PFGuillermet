@@ -1,0 +1,30 @@
+/* reset*/
+@import "utils/reset";
+/*variables, mixin, mapas*/
+@import "utils/variables";
+@import "utils/mixin";
+@import "utils/mapas";
+/*media queris*/
+@import "utils/mq-sm";
+@import "utils/mq-md";
+@import "utils/mq-lg";
+/*header y footer*/
+@import "layout/header";
+@import "layout/footer";
+/*páginas*/
+@import "html/home";
+@import "html/nosotros";
+@import "html/servicios";
+@import "html/ofertas";
+@import "html/contacto";
+@import "html/error";
+/*general*/
+body {
+  font-family: $font-hand;
+}
+
+.button-type-1 {
+  @include button-full;
+}
+
+

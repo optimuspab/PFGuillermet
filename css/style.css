@@ -1,0 +1,1029 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: 'Gochi Hand', cursive;
+}
+
+header {
+    display: flex;
+    padding: 2% 10% 0% 10%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gochi Hand', cursive;
+    background-color: #F1FAEE;
+}
+
+header a {
+    text-decoration: none;
+    color: #1D3557 !important;
+}
+
+header a:hover {
+    color: #457B9D !important;
+}
+
+.menu-desktop {
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.menu-desktop ul {
+    list-style-type: none;
+}
+
+.menu-desktop li {
+    float: left;
+    margin-right: 10px;
+    padding: 0 4px;
+}
+
+.logo {
+    width: 250px;
+}
+
+.container-fluid .logo-img:nth-of-type(2) {
+    display: none;
+}
+
+.container-fluid:hover .logo-img:nth-of-type(1) {
+    display: none;
+}
+
+.container-fluid:hover .logo-img:nth-of-type(2) {
+    display: block;
+}
+
+
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:hover {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.header-contact {
+    text-align: -webkit-right;
+}
+
+.button-type-1 {
+    border: none;
+    background: #E63946;
+    border-radius: 10px;
+    color: #F1FAEE;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+}
+
+.button-type-1:hover {
+        background-color: #1D3557;
+}
+
+main {
+    display: flex;
+    padding: 2% 10% 2% 10%;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.principal-presentation h1 {
+    font-size: 4vw;
+    color: #1D3557;
+}
+
+main p {
+    font-size: 2vw;
+    color: #457B9D;
+}
+
+.principal-presentation {
+    align-self: center;
+    padding-left: 10px;
+}
+
+.carousel {
+    position: none;
+}
+
+.principal-image {
+    max-width: 500px;
+    align-self: center;
+}
+
+.carousel-item img {
+    max-width: 500px;
+    object-fit: contain;
+}
+
+.services-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    margin: 0% 2% 0% 2%;
+    justify-content: center;
+    background-color: #457B9D;
+
+    justify-items: center;
+    place-items:  center;
+}
+
+.services-card {
+    max-width: 350px;
+    font-family: 'Gochi Hand', cursive;
+    text-align: center;
+    background-color: #F1FAEE;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);
+    transition: all .3s;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: all;
+    justify-items: center;
+}
+
+.services-card h5 {
+    color: #1D3557;
+}
+
+.services-card p {
+    color: #457B9D;
+}
+
+.services-card {
+    max-width: 300px;
+    align-self: center;
+}
+
+.services-card img {
+    max-width: 150px;
+}
+
+.services-card-button {
+    margin: 0% 0% 2% 0%
+}
+
+footer {
+    display: grid;
+    place-items: center;
+    font-family: 'Gochi Hand', cursive;
+}
+
+footer ul {
+    margin: 0%;
+}
+
+footer li {
+    display: inline-flex;
+}
+
+footer li a {
+    padding-right: 10px;
+}
+
+footer p {
+    color: #1D3557;
+}
+
+.nav-footer a {
+    color: #1D3557;
+}
+
+.socials-footer a {
+    color: #1D3557;
+}
+
+.nav-footer a:hover {
+    color: #457B9D;
+}
+
+.socials-footer a:hover {
+    color: #457B9D;
+}
+
+
+
+/*CSS específico "Sobre nosotros"*/
+
+.principal-presentation-about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #457B9D;
+}
+
+.principal-presentation-about-text h1 {
+    font-size: 5vh;
+    color: #A8DADC;
+}
+
+.principal-presentation-about-text p {
+    font-size: 3vh;
+    color: #A8DADC;
+}
+
+.about-us-img {
+    max-width: 350px;
+    padding-bottom: 5%;
+}
+
+.about-us-partners-section {
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    padding: 2% 2% 2% 2%;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.partner-img img {
+    max-width: 100px;
+}
+
+.partner-aws {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+
+.partner-google {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+.partner-microsoft {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+}
+
+.partner-vmware {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.partner-text {
+    grid-column: 3 / 3;
+    grid-row: 1 / span 2;
+}
+
+.partner-text h1 {
+    color: #1D3557;
+}
+
+.partner-text p {
+    color: #1D3557;
+}
+
+.about-us-clients-section {
+    display: grid;
+    grid-template-columns: 55% 15% 15% 15%;
+    padding: 2% 2% 2% 2%;
+    font-family: 'Gochi Hand', cursive;
+    background-color:#457B9D;
+
+}
+
+.client-text h1 {
+    color: #A8DADC;
+}
+
+.client-text p {
+    color: #A8DADC;
+}
+
+.client-img {
+    justify-self: center;
+    align-self: center;
+}
+
+.client-img img {
+    max-width: 100px;
+    max-height: 80px;
+}
+
+.client-text {
+    grid-column: 1 / 1;
+    grid-row: 1 / span 2;
+    padding-left: 5%;
+}
+
+.client-img client-mac {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
+
+.client-img client-city {
+    grid-column: 3 / 3;
+    grid-row: 1 / 1;
+}
+
+.client-img client-pepsi {
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
+}
+
+.client-img client-wendys {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+}
+
+.client-img client-rabobank {
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+}
+
+.client-img client-hsbc {
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+}
+
+/* CSS Contact */
+
+.principal-presentation-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    gap: 1%;
+}
+
+.principal-presentation-contact-form label {
+    margin: 1%;
+    padding: 1% 0% 1% 0%;
+}
+
+.form-button {
+    border: none;
+    background: #E63946;
+    border-radius: 10px;
+    color: #F1FAEE;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+}
+
+.form-button:hover {
+        background-color: #457B9D;
+}
+
+.principal-contact-image {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    gap:0%;
+}
+
+.principal-contact-image a {
+    text-decoration: none;
+}
+
+.contact-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.contact-link {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    justify-self: flex-end;
+    transition: transform 250ms, opacity 400ms;
+}
+
+.contact-link:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.contact-img {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+
+}
+
+.contact-chat {
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+}
+
+.contact-mail {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+}
+
+.contact-phone {
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+}
+
+/* Extra small devices (phones, 575px and down) */
+@media only screen and (max-width: 576px) {
+
+    header {
+        display: flex;
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+
+    .menu-desktop {
+        font-family: 'Gochi Hand', cursive;
+    }
+
+    .header-contact {
+        display: none;
+    }
+
+    .container-fluid a {
+        font-family: 'Gochi Hand', cursive;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        font-family: 'Gochi Hand', cursive;
+    }
+
+    .carousel-item img {
+        max-width: 350px;
+    }
+
+    h1 {
+        font-size: 5vh;
+    }
+
+    main p {
+        font-size: 3vw;
+    }
+
+    .services-section {
+        display: flex;
+        flex-direction: row;
+        padding: 2% 10% 2% 10%;
+
+        justify-content: space-around;
+    }
+
+    .service-automation {
+        display: none !important;
+    }
+
+    .service-bi {
+        display: none !important;
+    }
+
+    .services-card {
+        max-width: 180px;
+        margin: 1%;
+
+    }
+
+    .services-card img {
+        max-width: 100px;
+    }
+
+    .services-card h5 {
+        font-size: 3vw;
+    }
+
+    .services-card p {
+        font-size: 2vw;
+    }
+
+    .services-card button {
+        border-radius: 30px;
+        font-size: 2.5vw;
+        max-height: 25px;
+        max-width: 80%;
+    }
+
+    footer {
+        padding: 3% 0% 0% 0%
+    }
+
+    .nav-footer {
+        font-size: 2vw;
+    }
+
+    /*CSS específico "Sobre nosotros"*/
+
+    .principal-presentation-about {
+        flex-direction: column-reverse;
+
+    }
+
+    .about-us-img {
+        max-width: 150px;
+        padding-bottom: 5%;
+    }
+
+    .principal-presentation-about-text h1 {
+        font-size: 3vh;
+    }
+
+    .principal-presentation-about-text p {
+        font-size: 2vh;
+    }
+
+    .about-us-partners-section {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 0, 5fr 1fr 1fr 1fr;
+    }
+
+    .partner-img {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .partner-img img {
+        max-width: 80px;
+    }
+
+    .partner-text {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        padding: 0% 2% 0% 2%;
+    }
+
+    .partner-aws {
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+    }
+
+    .partner-google {
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+    }
+
+    .partner-microsoft {
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
+
+    .partner-vmware {
+        grid-column: 2 / 2;
+        grid-row: 4 / 4;
+    }
+
+    .partner-text h1 {
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    .partner-text p {
+        font-size: 2vh;
+        margin-bottom: 0%;
+        padding: 0% 5% 0% 5%;
+    }
+
+    .client-text h1 {
+        font-size: 3vh;
+    }
+
+    .client-text p {
+        font-size: 2vh;
+    }
+
+    .about-us-clients-section {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 25%);
+
+    }
+
+    .client-img img {
+        max-width: 60px;
+        max-height: 40px;
+    }
+
+    .client-text {
+        grid-column: 1 / 1;
+        grid-row: 1 / span 3;
+        padding: 0% 0% 0% 12%;
+    }
+
+    .client-img client-mac {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+
+    .client-img client-city {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+
+    .client-pepsi {
+        display: none;
+    }
+
+    .client-img client-wendys {
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+    }
+
+    .client-img client-rabobank {
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+    }
+
+    .client-img client-hsbc {
+        grid-column: 2 / 2;
+        grid-row: 4 / 4;
+    }
+
+    .footer-about-us {
+        padding-top: 2%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+
+    .logo {
+        max-width: 200px;
+    }
+
+    .navbar-toggler-icon {
+        width: 1.8em !important;
+        height: 1.8em !important;
+    }
+
+    .header-contact {
+        display: none !important;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    .carousel-item img {
+        max-width: 400px;
+    }
+
+    .services-section {
+        display: flex;
+        flex-direction: row;
+
+        padding: 1% 2% 1% 2%;
+    }
+
+    .service-automation {
+        display: none !important;
+    }
+
+    .service-bi {
+        display: none !important;
+    }
+
+    .services-card {
+        max-width: 180px;
+        margin: 1%;
+    }
+
+    .services-card img {
+        max-width: 120px;
+    }
+
+    /*.services-card button {
+        max-height: 30px;
+    }*/
+
+    /*CSS específico "Sobre nosotros"*/
+
+    .principal-presentation-about-text h1 {
+        font-size: 3vh;
+    }
+
+    .principal-presentation-about-text p {
+        font-size: 2vh;
+    }
+
+    .partner-text h1 {
+        font-size: 3vh;
+    }
+
+    .partner-text p {
+        font-size: 2vh;
+    }
+
+    .client-text h1 {
+        font-size: 3vh;
+    }
+
+    .client-text p {
+        font-size: 2vh;
+    }
+
+    .principal-presentation-about {
+        flex-direction: column-reverse;
+
+    }
+
+    .about-us-clients-section {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 25%);
+
+    }
+
+    footer {
+        padding-top: 3%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .navbar-toggler-icon {
+        width: 2em !important;
+        height: 2em !important;
+    }
+
+    .header-contact {
+        display: none !important;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    .principal-presentation {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+        flex-basis: 50%;
+        flex: 1;
+    }
+
+    .services-section {
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        grid-template-rows: auto;
+        padding: 1% 0% 1% 0%;
+        gap: 1%
+    }
+
+    .services-card {
+        max-width: 200px;
+    }
+
+    .service-cloud {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+    }
+
+    .service-security {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+
+    .service-support {
+        grid-column: 3 / 3;
+        grid-row: 1 / 1;
+    }
+
+    .service-automation {
+        display: grid !important;
+        grid-column: 4 / 4;
+        grid-row: 1 / 1;
+    }
+
+    .service-automation img {
+        justify-self: center;
+    }
+
+    .service-bi {
+        display: none !important;
+    }
+
+    /*CSS específico "Sobre nosotros"*/
+
+    .principal-presentation-about {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .principal-presentation-about-text h1 {
+        font-size: 3.5vh;
+    }
+
+    .principal-presentation-about-text p {
+        font-size: 2.5vh;
+    }
+
+    .partner-text h1 {
+        font-size: 3.5vh;
+        text-align: center;
+    }
+
+    .partner-text p {
+        font-size: 2.5vh;
+        margin-bottom: 0%;
+        padding: 0% 5% 0% 5%;
+    }
+
+    .client-text h1 {
+        font-size: 3.5vh;
+    }
+
+    .client-text p {
+        font-size: 2.5vh;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    header {
+        display: flex;
+    }
+
+    .header-contact {
+        display: flex !important;
+    }
+
+    .hidden-nav-contact {
+        display: none !important;
+    }
+
+    .principal-presentation {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    .carousel-item img {
+        max-width: 450px;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+        flex-basis: 50%;
+        flex: 1;
+    }
+
+    .service-automation {
+        display: grid !important;
+    }
+
+    .service-bi {
+        display: none !important;
+    }
+
+    .services-section {
+        display: grid;
+        grid-template-columns: repeat(4, 20%);
+        grid-template-rows: auto;
+        margin: 0%;
+    }
+
+    /*CSS específico "Sobre nosotros"*/
+
+    .principal-presentation-about-text h1 {
+        font-size: 4vh;
+    }
+
+    .principal-presentation-about-text p {
+        font-size: 3vh;
+    }
+
+    .partner-text h1 {
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    .partner-text p {
+        font-size: 3vh;
+        margin-bottom: 0%;
+        padding: 0% 5% 0% 5%;
+    }
+
+    .client-text h1 {
+        font-size: 4vh;
+    }
+
+    .client-text p {
+        font-size: 3vh;
+    }
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .hidden-nav-contact {
+        display: none !important;
+    }
+
+    main h1 {
+        font-size: 3.5vh;
+    }
+
+    main p {
+        font-size: 1.5vw;
+    }
+
+    .carousel-item img {
+        max-width: 500px;
+    }
+
+    .services-section {
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: auto;
+        padding: 2% 0% 2% 0%;
+        column-gap: 0%;
+    }
+
+    .service-bi {
+        display: grid !important;
+        grid-column: 5 / 5;
+        grid-row: 1 / 1;
+    }
+
+    .service-bi img {
+        justify-self: center;
+    }
+
+    .card-img-top {
+        justify-self: center;
+    }
+
+    /*CSS específico "Sobre nosotros"*/
+
+    .about-us-clients-section {
+        display: grid;
+        grid-template-columns: 55% 15% 15% 15%;
+        grid-template-rows: repeat(2, auto);
+        padding: 2% 2% 2% 2%;
+    }
+
+    .client-img {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .client-img img {
+        max-width: 100px;
+        max-height: 80px;
+    }
+
+    .client-text {
+        grid-column: 1 / 1;
+        grid-row: 1 / span 2;
+        padding-left: 5%;
+    }
+
+    .client-img client-mac {
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+
+    .client-img client-city {
+        grid-column: 3 / 3;
+        grid-row: 1 / 1;
+    }
+
+    .client-img client-pepsi {
+        grid-column: 4 / 4;
+        grid-row: 1 / 1;
+    }
+
+    .client-img client-wendys {
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+
+    .client-img client-rabobank {
+        grid-column: 3 / 3;
+        grid-row: 2 / 2;
+    }
+
+    .client-img client-hsbc {
+        grid-column: 4 / 4;
+        grid-row: 2 / 2;
+    }
+
+}
+
+
