@@ -1,0 +1,21 @@
+.button-type-2 {
+    @include button-full-big;
+  }
+
+
+.error-404 {
+  display: flex;
+}
+
+.error-text {
+  align-self: center;
+}
+
+.error-img {
+  img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    align-self: center;
+  }
+}

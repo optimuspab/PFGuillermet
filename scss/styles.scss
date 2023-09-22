@@ -4,10 +4,12 @@
 @import "utils/variables";
 @import "utils/mixin";
 @import "utils/mapas";
+@import "utils/conditionals";
+@import "utils/extends";
 /*media queris*/
-@import "utils/mq-sm";
-@import "utils/mq-md";
-@import "utils/mq-lg";
+@import "mq/mq-sm";
+@import "mq/mq-md";
+@import "mq/mq-lg";
 /*header y footer*/
 @import "layout/header";
 @import "layout/footer";
@@ -24,7 +26,7 @@ body {
 }
 
 .button-type-1 {
-  @include button-full;
+  @include abutton;
 }
 
 
