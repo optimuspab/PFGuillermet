@@ -18,14 +18,13 @@ footer {
     p {
       color: $col-berkeley-blue;
     }
+    .nav-footer a,
+    .socials-footer a {
+      color: $col-berkeley-blue;
+      &:hover {
+        color: $col-cerulean;
+    }
+  }
+    
   }
   
-  .nav-footer a,
-  .socials-footer a {
-    color: $col-berkeley-blue;
-  }
-  
-  .nav-footer a:hover,
-  .socials-footer a:hover {
-    color: $col-cerulean;
-  }

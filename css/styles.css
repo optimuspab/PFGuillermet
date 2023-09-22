@@ -7,60 +7,69 @@
 }
 
 /*variables, mixin, mapas*/
+:root {
+  font-size: 16px;
+}
+
 /*media queris*/
 /* Extra small devices (phones, 575px and down) */
 @media only screen and (max-width: 576px) {
-  .logo {
-    max-width: 120px;
+  header .menu-desktop .container-fluid .logo-img {
+    max-width: 140px !important;
   }
-  .header-contact {
+  header .menu-desktop .container-fluid .logo-img a img {
+    max-width: 140px !important;
+  }
+  header .header-contact {
     display: none;
   }
   main {
     flex-direction: column-reverse;
   }
-  main h1 {
-    font-size: 3vh;
+  main .principal-presentation {
+    text-align: center;
   }
-  main p {
-    font-size: 2vh;
+  main .principal-presentation h1 {
+    font-size: 1.5rem !important;
   }
-  .carousel-item {
+  main .principal-presentation p {
+    font-size: 1rem;
+  }
+  main .principal-image .carousel-inner .carousel-item {
     text-align: -webkit-center;
   }
-  .carousel-item img {
+  main .principal-image .carousel-inner .carousel-item img {
     max-width: 350px;
     max-height: 229px;
   }
   .services-section {
     padding: 2% 10% 2% 10%;
   }
-  .service-support,
-  .service-automation,
-  .service-bi {
-    display: none;
-  }
-  .services-card {
-    max-width: 170px;
-    max-height: 260px;
+  .services-section .services-card {
+    max-width: 170px !important;
+    max-height: 280px;
     align-content: normal;
     align-items: center;
     margin: 1%;
   }
-  .services-card img {
-    max-width: 100px;
+  .services-section .services-card img {
+    max-width: 100px !important;
   }
-  .services-card h5 {
-    font-size: 2.5vh;
+  .services-section .services-card h2 {
+    font-size: 1rem !important;
   }
-  .services-card p {
-    font-size: 2vh;
+  .services-section .services-card p {
+    font-size: 1.5vh;
   }
-  .services-card button {
+  .services-section .services-card .button-type-1 {
     border-radius: 30px;
-    font-size: 2vh;
-    max-height: 25px;
+    font-size: 1.8vh;
+    max-height: 30px;
     max-width: 90%;
+    margin-bottom: 2%;
+  }
+  .services-section .service-support {
+    display: none !important;
   }
   footer {
     padding: 3% 0% 0% 0%;
@@ -103,7 +112,8 @@
     grid-row: 1/span 2;
     padding: 0% 2% 0% 2%;
   }
-  .partner-redhat, .partner-servicenow {
+  .partner-redhat,
+  .partner-servicenow {
     display: none;
   }
   .partner-aws {
@@ -408,10 +418,10 @@
   header {
     display: flex;
   }
-  .header-contact {
+  header .header-contact {
     display: flex;
   }
-  .hidden-nav-contact {
+  header .hidden-nav-contact {
     display: none;
   }
   .principal-presentation {
@@ -428,12 +438,6 @@
     flex-direction: column;
     flex-basis: 50%;
     flex: 1;
-  }
-  .service-automation {
-    display: grid;
-  }
-  .service-bi {
-    display: none;
   }
   .services-section {
     display: grid;
@@ -657,74 +661,59 @@ header {
   padding: 2% 10% 0% 10%;
   align-items: center;
   justify-content: center;
-  font-family: "Gochi Hand", cursive;
   background-color: #F1FAEE;
+  font-family: "Gochi Hand", cursive;
 }
-header a {
-  text-decoration: none;
-  color: #1D3557 !important;
-}
-header a:hover {
-  color: #457B9D !important;
-}
-
-.menu-desktop {
+header .menu-desktop {
   text-decoration: none;
   flex-grow: 1;
+  display: flex;
 }
-.menu-desktop ul {
+header .menu-desktop ul {
   list-style-type: none;
 }
-.menu-desktop li {
+header .menu-desktop li {
   float: left;
   margin-right: 10px;
   padding: 0 4px;
 }
-
-.logo {
-  width: 100%;
+header .menu-desktop a {
+  text-decoration: none;
+  color: #1D3557 !important;
+}
+header .menu-desktop a:hover {
+  color: #457B9D !important;
+}
+header .menu-desktop .container-fluid .logo-img {
   max-width: 250px;
   height: auto;
 }
-
-.container-fluid .logo-img:nth-of-type(2) {
+header .menu-desktop .container-fluid .logo-img a img {
+  max-width: 250px;
+}
+header .menu-desktop .container-fluid .logo-img:nth-of-type(2) {
   display: none;
 }
-.container-fluid:hover .logo-img:nth-of-type(1) {
+header .menu-desktop .container-fluid:hover .logo-img:nth-of-type(1) {
   display: none;
 }
-.container-fluid:hover .logo-img:nth-of-type(2) {
+header .menu-desktop .container-fluid:hover .logo-img:nth-of-type(2) {
   display: block;
 }
-
-.navbar-toggler {
+header .menu-desktop .container-fluid .navbar-toggler {
   border: none !important;
 }
-.navbar-toggler:hover {
+header .menu-desktop .container-fluid .navbar-toggler:hover {
   border: none !important;
 }
-.navbar-toggler:focus {
+header .menu-desktop .container-fluid .navbar-toggler:focus {
   border: none !important;
   box-shadow: none !important;
 }
-
-.header-contact {
+header .header-contact {
   text-align: -webkit-right;
-  border: none;
-  background: #E63946;
-  border-radius: 10px;
-  cursor: pointer;
-  align-self: center;
+  align-items: center;
   justify-content: center;
-  height: 40px;
-  width: 100px;
-}
-.header-contact a {
-  color: #F1FAEE !important;
-  align-self: center;
-}
-.header-contact:hover {
-  background-color: #1D3557;
 }
 
 footer {
@@ -744,14 +733,12 @@ footer li a {
 footer p {
   color: #1D3557;
 }
-
-.nav-footer a,
-.socials-footer a {
+footer .nav-footer a,
+footer .socials-footer a {
   color: #1D3557;
 }
-
-.nav-footer a:hover,
-.socials-footer a:hover {
+footer .nav-footer a:hover,
+footer .socials-footer a:hover {
   color: #457B9D;
 }
 
@@ -765,31 +752,27 @@ main {
   margin: 0% 2% 0% 2%;
 }
 main p {
-  font-size: 2vw;
+  font-size: 1.5rem;
   color: #457B9D;
 }
-
-.principal-presentation {
+main .principal-presentation {
   align-self: center;
   padding-left: 10px;
 }
-.principal-presentation h1 {
-  font-size: 4vw;
+main .principal-presentation h1 {
+  font-size: 2.5rem;
   color: #A8DADC;
 }
-
-.carousel {
+main .carousel {
   position: none;
 }
-
-.principal-image {
+main .principal-image {
   width: 100%;
   max-width: 500px;
   height: auto;
   align-self: center;
 }
-
-.carousel-item img {
+main .principal-image .carousel-item img {
   width: 100%;
   height: 100%;
   max-height: 327px;
@@ -807,8 +790,7 @@ main p {
   justify-items: center;
   place-items: center;
 }
-
-.services-card {
+.services-section .services-card {
   display: grid;
   width: 100%;
   max-width: 300px;
@@ -827,20 +809,26 @@ main p {
   transition-delay: 0s;
   transition-property: all;
 }
-.services-card h5 {
+.services-section .services-card h2 {
   color: #1D3557;
+  font-size: 1.5rem;
 }
-.services-card p {
+.services-section .services-card p {
   color: #457B9D;
 }
-.services-card img {
+.services-section .services-card img {
   width: 100%;
   max-width: 150px;
   height: auto;
 }
-
-.services-card-button {
-  margin: 0% 0% 2% 0%;
+.services-section .services-card .services-card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services-section .services-card .services-card-button a {
+  text-decoration: none;
+  color: #F1FAEE !important;
 }
 
 /*CSS específico "Sobre nosotros"*/
@@ -1252,11 +1240,13 @@ body {
   border: none;
   background: #E63946;
   border-radius: 10px;
-  color: #F1FAEE;
+  cursor: pointer;
   height: 40px;
   width: 100px;
-  cursor: pointer;
-  align-self: center;
+}
+.button-type-1 a {
+  text-decoration: none;
+  color: #F1FAEE !important;
 }
 .button-type-1:hover {
   background-color: #1D3557;

@@ -1,0 +1,14 @@
+@mixin main_condition($main-background){
+    background-color: $main-background;
+    @if $main-background == $col-berkeley-blue{
+        color: $col-non-photo-blue;
+    } @else if $main-background == $col-cerulean {
+        color: $col-honeydew;
+    } @else if $main-background == $col-non-photo-blue {
+        color: $col-berkeley-blue;
+    } @else if $main-background == $col-red-pantone {
+        color: $col-honeydew;
+    } @else {
+        color: $col-non-photo-blue;
+    }
+}
