@@ -1327,13 +1327,12 @@ main .principal-about-us-image .about-us-img {
 
 .error-404 {
   display: flex;
+  background-color: #A8DADC;
 }
-
-.error-text {
+.error-404 .error-text {
   align-self: center;
 }
-
-.error-img img {
+.error-404 .error-img img {
   width: 100%;
   max-width: 500px;
   height: auto;
