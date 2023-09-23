@@ -1,0 +1,80 @@
+/* Extra small devices (phones, 575px and down) */
+@media only screen and (max-width: 576px) {
+    /* mq contacto */
+
+    .principal-presentation-contact {
+        .principal-presentation-contact-form {
+            grid-column: 1 / span 2;
+            grid-row: 2 / 2;
+            margin: 1%;
+
+            h1 {
+                font-size: 1.5rem;
+                text-align-last: center;
+            }
+
+            .formulario {
+                .form-group {
+                    margin: 1%;
+
+                }
+            }
+        }
+
+        .principal-contact-image {
+            grid-column: 1 / span 2;
+            grid-row: 1 / 1;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    .principal-presentation-contact {
+        .principal-presentation-contact-form {
+            grid-column: 1 / span 2;
+            grid-row: 2 / 2;
+            margin: 1%;
+
+            h1 {
+                font-size: 1.7rem;
+                text-align-last: center;
+            }
+        }
+
+        .principal-contact-image {
+            grid-column: 1 / span 2;
+            grid-row: 1 / 1;
+            justify-content: center;
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .principal-presentation-contact {
+        .principal-presentation-contact-form {
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .principal-presentation-contact {
+        .principal-presentation-contact-form {
+            h1 {
+                font-size: 1.9rem;
+            }
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .principal-presentation-contact {
+        @include grid-two-c;
+    }
+}

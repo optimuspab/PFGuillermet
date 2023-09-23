@@ -1,14 +1,42 @@
 @mixin main_condition($main-background){
     background-color: $main-background;
     @if $main-background == $col-berkeley-blue{
-        color: $col-non-photo-blue;
+        font-family: $font-hand;
+        h1 {
+            color: $col-non-photo-blue;
+        }
+        p {
+           color: $col-cerulean;
+        }
     } @else if $main-background == $col-cerulean {
-        color: $col-honeydew;
+        font-family: $font-hand;
+        h2 {
+            color: $col-non-photo-blue;
+        }
+        p {
+           color: $col-honeydew;
+        }
     } @else if $main-background == $col-non-photo-blue {
-        color: $col-berkeley-blue;
+        font-family: $font-hand;
+        h1 {
+            color: $col-berkeley-blue;
+        }
+        p {
+            color: $col-berkeley-blue;          
+        }
     } @else if $main-background == $col-red-pantone {
+        font-family: $font-hand;
         color: $col-honeydew;
+    } @else if $main-background == $col-honeydew {
+        font-family: $font-hand;
+        h2 {
+            color: $col-berkeley-blue;
+        }
+        p {
+           color: $col-cerulean;
+        }
     } @else {
+        font-family: $font-hand;
         color: $col-non-photo-blue;
     }
 }

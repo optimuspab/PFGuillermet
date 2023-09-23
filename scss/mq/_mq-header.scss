@@ -1,0 +1,102 @@
+/* Extra small devices (phones, 575px and down) */
+@media only screen and (max-width: 576px) {
+/*mq header*/
+
+    header {
+        .menu-desktop {
+            .container-fluid {
+                .logo-img {
+                    max-width: 140px !important;
+
+                    a {
+                        img {
+                            max-width: 140px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-contact {
+            display: none;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+
+    header {
+        .menu-desktop {
+            .container-fluid {
+                .logo-img {
+                    max-width: 180px !important;
+
+                    a {
+                        img {
+                            max-width: 180px !important;
+                        }
+                    }
+                }
+
+                .navbar-toggler {
+                    .navbar-toggler-icon {
+                        width: 1.8em;
+                        height: 1.8em;
+                    }
+                }
+            }
+        }
+
+        .header-contact {
+            display: none;
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    header {
+        .menu-desktop {
+            .container-fluid {
+                .logo-img {
+                    max-width: 200px !important;
+
+                    a {
+                        img {
+                            max-width: 200px !important;
+                        }
+                    }
+                }
+
+                .navbar-toggler {
+                    .navbar-toggler-icon {
+                        width: 2em;
+                        height: 2em;
+                    }
+                }
+            }
+        }
+
+        .header-contact {
+            display: none;
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    header {
+        display: flex;
+
+        .header-contact {
+            display: flex;
+        }
+
+        .hidden-nav-contact {
+            display: none;
+        }
+
+    }
+}
