@@ -1,15 +1,9 @@
 /* css index */
-
 main {
-  display: flex;
-  padding: 2% 10% 2% 10%;
-  font-family: $font-hand;
-  background-color: $col-berkeley-blue;
-  margin: 0% 2% 0% 2%;
-
+  @include main_condition($col-berkeley-blue);
+  @include flex-main;
   p {
     font-size: 1.5rem;
-    color: $col-cerulean;
   }
 
   .principal-presentation {
@@ -18,7 +12,6 @@ main {
 
     h1 {
       font-size: 2.5rem;
-      color: $col-non-photo-blue;
     }
   }
 
@@ -55,24 +48,8 @@ main {
   place-items: center;
 
   .services-card {
-    display: grid;
-    width: 100%;
-    max-width: 300px;
-    height: 350px;
-    align-self: center;
-    align-content: space-between;
-    justify-items: center;
-    text-align: center;
-    font-family: $font-hand;
-    background-color: $col-honeydew;
-    border-radius: 10px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
-    transition: all .3s;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    transition-property: all;
-  
+    @include card;
+
     h2 {
       color: $col-berkeley-blue;
       font-size: 1.5rem;
@@ -89,17 +66,12 @@ main {
     }
     
     .services-card-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      a {
-        text-decoration: none;
-        color: $col-honeydew !important;
-      }
+        @include cardbutton;
     }
   }
 
 }
+
 
 
 

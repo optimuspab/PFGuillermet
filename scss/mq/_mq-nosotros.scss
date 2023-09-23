@@ -1,0 +1,319 @@
+/* Extra small devices (phones, 575px and down) */
+@media only screen and (max-width: 576px) {
+
+  /*CSS específico "Sobre nosotros"*/
+
+  .principal-presentation-about {
+    .principal-about-us-image {
+      text-align: -webkit-center;
+
+      .about-us-img {
+        max-width: 220px;
+        padding-bottom: 5%;
+
+        img {
+          max-width: 220px;
+        }
+      }
+    }
+  }
+
+  .about-us-partners-section {
+    grid-template-columns: 15% 15% 55% !important;
+    grid-template-rows: 2;
+    justify-content: center;
+
+    .partner-img {
+      justify-self: center;
+      align-self: center;
+
+      img {
+        width: 100%;
+        max-width: 80px;
+        height: auto;
+      }
+    }
+
+    .partner-text {
+      grid-column: 3 / 3 !important;
+      grid-row: 1 / span 2 !important;
+      padding: 0% 2% 0% 2%;
+
+      h2 {
+        font-size: 1.3rem !important;
+      }
+
+      p {
+        font-size: 1rem !important;
+      }
+    }
+
+    .partner-redhat,
+    .partner-servicenow {
+      display: none;
+    }
+
+    .partner-aws {
+      grid-column: 1 / 1;
+      grid-row: 1 / 1;
+    }
+
+    .partner-google {
+      grid-column: 2 / 2;
+      grid-row: 1 / 1;
+    }
+
+    .partner-microsoft {
+      grid-column: 1 / 1 !important;
+      grid-row: 2 / 2 !important;
+    }
+
+    .partner-vmware {
+      grid-column: 2 / 2;
+      grid-row: 2 / 2;
+    }
+
+  }
+
+
+  .about-us-clients-section {
+    grid-template-columns: repeat(2, 50%) !important;
+    grid-template-rows: repeat(4, 25%) !important;
+
+    .client-text {
+      h2 {
+        font-size: 1.3rem !important;
+      }
+
+      p {
+        font-size: 1rem !important;
+      }
+    }
+
+    .client-img {
+      img {
+        max-width: 60px !important;
+        max-height: 40px !important;
+      }
+    }
+
+    .client-text {
+      padding: 0% 0% 0% 12%;
+    }
+
+    .client-mac {
+      grid-column: 2 / 2;
+      grid-row: 1 / 1;
+    }
+
+    .client-city {
+      grid-column: 2 / 2;
+      grid-row: 2 / 2;
+    }
+
+    .client-pepsi {
+      display: none;
+    }
+
+    .client-wendys {
+      grid-column: 2 / 2;
+      grid-row: 4 / 4;
+    }
+
+    .client-rabobank {
+      grid-column: 2 / 2;
+      grid-row: 3 / 3;
+    }
+
+    .client-hsbc {
+      grid-column: 1 / 1;
+      grid-row: 4 / 4;
+    }
+  }
+
+  .footer-about-us {
+    padding-top: 2%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+
+  /*CSS específico "Sobre nosotros"*/
+  .principal-presentation-about {
+    .principal-about-us-image {
+      text-align: -webkit-center;
+
+      .about-us-img {
+        max-width: 300px;
+
+        img {
+          max-width: 300px;
+        }
+      }
+    }
+  }
+
+  .about-us-partners-section {
+    .partner-text {
+      h2 {
+        font-size: 1.4rem !important;
+      }
+
+      p {
+        font-size: 1.1rem !important;
+      }
+    }
+  }
+
+  .about-us-clients-section {
+    grid-template-columns: repeat(2, 50%) !important;
+    grid-template-rows: repeat(4, 25%) !important;
+
+    .client-pepsi {
+      display: none;
+    }
+
+    .client-wendys {
+      grid-column: 2 / 2;
+      grid-row: 4 / 4;
+    }
+
+    .client-rabobank {
+      grid-column: 2 / 2;
+      grid-row: 3 / 3;
+    }
+
+    .client-hsbc {
+      grid-column: 1 / 1;
+      grid-row: 4 / 4;
+    }
+
+    .client-text {
+      h2 {
+        font-size: 1.4rem !important;
+      }
+
+      p {
+        font-size: 1.1rem !important;
+      }
+    }
+
+    .client-img {
+      img {
+        max-width: 80px !important;
+        max-height: 60px !important;
+      }
+    }
+
+  }
+
+  footer {
+    padding-top: 3%;
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  /*CSS específico "Sobre nosotros"*/
+  .principal-presentation-about {
+    .principal-about-us-image {
+      text-align: -webkit-center;
+
+      .about-us-img {
+        max-width: 350px;
+
+        img {
+          max-width: 350px;
+        }
+      }
+    }
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  /*CSS específico "Sobre nosotros"*/
+
+  .principal-presentation-about {
+    .principal-presentation-about-text {
+      h1 {
+        font-size: 2.8rem !important;
+      }
+
+      p {
+        font-size: 1.6rem !important;
+      }
+    }
+  }
+
+  .about-us-partners-section {
+    .partner-text {
+      h2 {
+        font-size: 1.5rem !important;
+      }
+
+      p {
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+
+  .about-us-clients-section {
+    grid-template-columns: 40% 20% 20% 20% !important;
+    grid-template-rows: repeat(2, auto) !important;
+
+    .client-text {
+      grid-column: 1 / 1;
+      grid-row: 1 / span 2;
+
+      h2 {
+        font-size: 1.5rem !important;
+      }
+
+      p {
+        font-size: 1.2rem !important;
+      }
+    }
+
+    .client-mac {
+      grid-column: 2 / 2;
+      grid-row: 1 / 1;
+    }
+
+    .client-city {
+      grid-column: 3 / 3;
+      grid-row: 1 / 1;
+    }
+
+    .client-wendys {
+      grid-column: 2 / 2;
+      grid-row: 2 / 2;
+    }
+
+    .client-rabobank {
+      grid-column: 3 / 3;
+      grid-row: 2 / 2;
+    }
+
+    .client-pepsi {
+      display: grid;
+      grid-column: 4 / 4;
+      grid-row: 1 / 1;   
+    }
+    .client-hsbc {
+      grid-column: 4 / 4;
+      grid-row: 2 / 2;
+    }
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

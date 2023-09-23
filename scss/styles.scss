@@ -7,9 +7,12 @@
 @import "utils/conditionals";
 @import "utils/extends";
 /*media queris*/
-@import "mq/mq-sm";
-@import "mq/mq-md";
-@import "mq/mq-lg";
+@import "mq/mq-home";
+@import "mq/mq-nosotros";
+@import "mq/mq-servicios";
+@import "mq/mq-ofertas";
+@import "mq/mq-contacto";
+@import "mq/mq-header";
 /*header y footer*/
 @import "layout/header";
 @import "layout/footer";
@@ -21,12 +24,10 @@
 @import "html/contacto";
 @import "html/error";
 /*general*/
-body {
-  font-family: $font-hand;
-}
-
 .button-type-1 {
   @include abutton;
-}
+} 
+
+
 
 
